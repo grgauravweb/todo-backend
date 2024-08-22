@@ -6,7 +6,7 @@ import { validateTask } from './schema/task.schema.js';
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['https://todo-frontend-dun-gamma.vercel.app/']
+    origin: ['http://localhost:5173', 'https://todo-frontend-dun-gamma.vercel.app']
 }));
 
 // Create Redis client and connect to the cloud Redis server
